@@ -1,0 +1,146 @@
+// Useful LESS Mixins by iTyu
+
+.fader() {
+    -webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+.rounded (@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+
+-webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+        background-clip: padding-box;
+}
+
+// Grandient Background
+.gradient (@color1, @color2) {
+    background-color: @color2;
+    background-image:     -ms-linear-gradient(top left, @color1 0%, @color2 100%);
+    background-image: -webkit-linear-gradient(top, @color1, @color2);
+    background-image:    -moz-linear-gradient(top, @color1, @color2);
+    background-image:      -o-linear-gradient(top, @color1, @color2);
+    background-image:        -webkit-gradient(linear, left top, left bottom, from(@color1), to(@color2));
+    background-image:         linear-gradient(top, @color1, @color2);
+}
+
+.opacity (@value: 1) {
+    @filter: @value * 100;
+
+          
+     -moz-opacity: @value;
+   -khtml-opacity: @value;
+    -ms-filter: ~'"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{filter})"';
+    filter: ~"alpha(opacity=@{filter})";
+    opacity: @value;
+}
+
+.box-shadow (@arguments) {
+     -moz-box-shadow: @arguments;
+      -ms-box-shadow: @arguments;
+       -o-box-shadow: @arguments;
+          box-shadow: @arguments;
+}
+
+.inner--box-shadow (@arguments) {
+    -webkit-box-shadow: inset @arguments;
+       -moz-box-shadow: inset @arguments;
+            box-shadow: inset @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+.rotation(@deg:90deg){
+    .transform(rotate(@deg));
+}
+
+.scale(@ratio:1){
+    .transform(scale(@ratio));
+}
+
+.truncate (@width) {
+    width: @width;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+       -moz-transition: @transition;
+         -o-transition: @transition;
+            transition: @transition;
+}
+
+.box-sizing(@boxmodel) {
+    -webkit-box-sizing: @boxmodel;
+       -moz-box-sizing: @boxmodel;
+            box-sizing: @boxmodel;
+}
+
+.user-select(@argument: none) {
+  -webkit-user-select: @argument;
+     -moz-user-select: @argument;
+      -ms-user-select: @argument;
+          user-select: @argument;
+}
+
+.text-shadow (@arg: 0 1px 1px rgba(0, 0, 0, 0.5)) {
+    text-shadow: @arg;
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+    -webkit-animation: @name @duration @delay @ease;
+       -moz-animation: @name @duration @delay @ease;
+        -ms-animation: @name @duration @delay @ease;
+}
+
+.skew (@deg, @deg2) {
+  -webkit-transform: skew(@deg, @deg2);
+     -moz-transform: skew(@deg, @deg2);
+      -ms-transform: skew(@deg, @deg2);
+       -o-transform: skew(@deg, @deg2);
+}
+
+.translate (@x, @y:0) {
+    -webkit-transform: translate(@x, @y);
+       -moz-transform: translate(@x, @y);
+        -ms-transform: translate(@x, @y);
+         -o-transform: translate(@x, @y);
+}
+
+.translate3d (@x, @y: 0, @z: 0) {
+  -webkit-transform: translate3d(@x, @y, @z);
+     -moz-transform: translate3d(@x, @y, @z);
+      -ms-transform: translate3d(@x, @y, @z);
+       -o-transform: translate3d(@x, @y, @z);
+}
+
+.perspective (@value: 1000) {
+    -webkit-perspective: @value;
+       -moz-perspective: @value;
+        -ms-perspective: @value;
+            perspective: @value;
+}
+
+.transform-origin (@x:center, @y:center) {
+  -webkit-transform-origin: @x @y;
+     -moz-transform-origin: @x @y;
+      -ms-transform-origin: @x @y;
+       -o-transform-origin: @x @y;
+}
+
+.border(@color: @grey, @width: 1px)
+{
+    border-top:@width solid @color;
+}
+
+

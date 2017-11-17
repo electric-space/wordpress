@@ -1,0 +1,75 @@
+// Sub Reset
+
+
+.uk-navbar-brand, .uk-navbar-content, .uk-navbar-toggle{
+    padding:0;
+}
+
+
+html,
+body{
+    font-family: @font-body;
+    font-size:14px;
+    line-height:@baseline;
+      text-rendering: optimizeLegibility !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    color:@black;
+    background-color:@white;
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: @font-heading;
+    font-weight:normal;
+    line-height:1.2;
+    color:@black;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child{
+    margin-top:0;
+}
+
+
+
+p, ul,ol{
+    margin:@baseline/2 0 0;
+    line-height:@baseline;
+    color:@black;
+}
+
+blockquote{
+    margin-top:@baseline/2;
+}
+
+
+
+
+.hentry,
+.entry-content{
+    margin-bottom:0;
+    margin-top:0;
+}
+
+
+
+/**
+ * WooCommerce
+ */
+.woocommerce .site-content .products ul, 
+.woocommerce .site-content ul.products{
+    margin:0 0 0 -24px;
+}
+
+
+

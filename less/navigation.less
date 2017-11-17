@@ -1,0 +1,98 @@
+a:link,
+a:visited,
+a:active,
+a:hover{
+    color:@black;
+}
+
+// navigation
+
+.main-navigation li a:hover,
+.main-navigation li.current-menu-item a,
+li.current-menu-item a,
+li.current_page_item a,
+li.current-page-ancestor a,
+li.current-product_cat-ancestor a,
+.post-type-archive-exhibitions li.menu-item-532 a,
+.post-type-archive-exhibitions li.page-item-116 a{
+    text-decoration: underline;    
+}
+
+
+
+
+
+.main-navigation{
+    padding:0;
+    margin:0;
+    list-style: none; 
+}
+
+
+
+.main-navigation{
+    padding:@baseline 0;
+    a{
+        font-size:1.5rem;
+        color: @black;
+    }
+}
+
+
+//sticky
+
+.sticky-wrapper.uk-active{
+    background-color:fade(@gold, 80);
+    width:100%!important;
+    left:0;
+    .box-shadow(0 3px 3px #eee);
+    #site-navigation{
+        width:910px;
+        margin:0 auto;
+    }
+}
+
+
+
+
+// mobile menu
+
+.mobile-menu{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    li{
+        margin:@baseline 0 @baseline @baseline/2;
+        a{
+            color:@white;
+            font-size:1.5rem;
+        }
+    }
+    
+}
+
+
+
+
+// pagination
+.site-main .comment-navigation, 
+.site-main .posts-navigation, 
+.site-main .post-navigation{
+    margin:@baseline 0 0 0;
+}
+
+
+
+
+
+
+
+// footer
+
+footer{
+    a:link, a:hover, a:visited{
+        color:@black;
+    }
+}
+
+

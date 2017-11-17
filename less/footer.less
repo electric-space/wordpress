@@ -1,0 +1,92 @@
+// post footer
+
+.entry-footer{
+    .border();
+    margin-top:@baseline;
+    padding-top:@baseline/2;
+}
+
+.entry-footer span{
+    margin-right:@baseline;
+}
+
+
+
+.site-footer-wrapper{
+    background-image: url('../img/paper_bg4.jpg');
+    //background-size: cover;
+    background-position: center -340px;
+    background-repeat: no-repeat;
+    padding-top:@baseline;
+    padding-bottom:@baseline;
+}
+
+
+// copyright
+.copyright--wrapper{
+    padding:0;
+    margin:0;
+    list-style: none;
+    font-size:0;
+    li{
+        font-size:1rem;
+    }
+
+}
+
+.footer-nav ul{
+    float:right;
+    li{
+        display:inline;
+    }
+    li:before{
+        content:'\00A0| ';
+    }
+    li:first-child:before{
+        content:'';
+    }
+}
+
+
+
+.copyright--wrapper p{
+    display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+// RWD
+@media (min-width:530px)
+{
+    .copyright--wrapper{
+        li{
+            display:inline;
+        }
+        li:before{
+            content:'\00A0| ';
+        }
+        li:first-child:before{
+            content:'';
+        }
+    }
+}
+
+
+
+@media (max-width:479px)
+{
+    .footer-nav ul{
+        float:none;
+    }
+
+}
+
+
+

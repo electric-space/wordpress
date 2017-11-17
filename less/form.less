@@ -1,0 +1,96 @@
+// form
+
+input:focus,
+textarea:focus,
+input[type='submit'], 
+.woocommerce .widget_shopping_cart .buttons a, 
+.woocommerce.widget_shopping_cart .buttons a, 
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button, 
+.woocommerce input.button.alt{
+    outline-color:@grey;
+}
+
+.woocommerce div.product form.cart div.quantity input.input-text.qty.text{
+    height:30px;
+}
+
+
+input[type='submit'],
+.woocommerce .widget_shopping_cart .buttons a, 
+.woocommerce.widget_shopping_cart .buttons a,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt,
+.woocommerce input.button,
+.woocommerce input.button.alt{
+    background-color:@grey;
+    width:auto; 
+    text-transform:uppercase;
+    border:none;
+    color:@white;
+    font-family: @font-body;
+    padding:8px;
+}
+
+input[type='submit']:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button:hover,
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover,
+.woocommerce input.button:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce .widget a.button:hover{
+    background-color:@black;
+    color:@white;
+}
+
+
+.woocommerce form .form-row abbr.required{
+    border-bottom:0;
+    text-decoration: none;
+}
+
+
+
+// basket page
+.coupon{
+    float:left;
+}
+
+
+
+.woocommerce .cart input[name="update_cart"]{
+    float:right;
+}
+
+
+
+
+//search 
+
+form.search-form{
+    overflow: hidden;
+    padding:@baseline 0;
+}
+
+input.search-submit,
+input.search-field{
+    display:block;
+    float:left;
+}
+
+input.search-field{
+    line-height:28px;
+    padding:0 0 0 5px;
+    margin-right:@baseline/2;
+}
+
+input.search-submit{
+    line-height:30px;
+    padding:0 @baseline;
+    font-size:1.2rem;
+
+}
